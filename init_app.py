@@ -10,9 +10,9 @@ from validators import escape
 def create_app():
     app = Flask(__name__)
     load_dotenv()
-    app.config["IP_OR_DOMAIN_WITH_PORT"] = "{}:{}".format(os.environ["IP_OR_DOMAIN"], os.environ["PORT"])
-    app.config["CAPTCHA_TOKEN"] = os.getenv("CAPTCHA_TOKEN")
-    app.config["CAPTCHA_SITE_KEY"] = os.getenv("CAPTCHA_SITE_KEY")
+    app.config["127.0.0.1"] = "{}:{}".format(os.environ["127.0.0.1"], os.environ["5000"])
+    app.config["your_google_captcha_token_here"] = os.getenv("your_google_captcha_token_here")
+    app.config["your_google_captcha_site_key_here"] = os.getenv("your_google_captcha_site_key_here")
 
     from jobs import rq
     rq.init_app(app)
