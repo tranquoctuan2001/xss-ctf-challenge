@@ -1,1 +1,1 @@
-web: gunicorn 'wsgi:create_app()'
+web: gunicorn xss-app-test2.wsgi
