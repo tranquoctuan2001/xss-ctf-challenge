@@ -15,6 +15,3 @@ python-dotenv==0.14.0
 requests
 gunicorn==19.9.0
 
-
-MarkupSafe==1.1.1
-
