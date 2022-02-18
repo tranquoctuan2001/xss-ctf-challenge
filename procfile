@@ -1,1 +1,1 @@
-web: gunicorn "wsgi:create_app()" --workers 1 --worker-class gevent
+web: python wsgi.py runserver 0.0.0.0:5000
