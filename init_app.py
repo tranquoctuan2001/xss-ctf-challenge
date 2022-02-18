@@ -8,7 +8,7 @@ from validators import escape
 
 
 def create_app():
-    app = Flask(__name__).route('/')
+    app = Flask(__name__)
 
     load_dotenv()
     # app.config["IP_OR_DOMAIN_WITH_PORT"] = "{}:{}".format(

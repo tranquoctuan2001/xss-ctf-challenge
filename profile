@@ -1,0 +1,1 @@
+web: gunicorn xss-bot-pupet:app
