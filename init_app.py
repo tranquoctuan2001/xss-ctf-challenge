@@ -20,7 +20,7 @@ def create_app():
     # app.config["your_google_captcha_token_here"] = os.getenv(
     #     "your_google_captcha_token_here")
     # app.config["CAPTCHA_SITE_KEY"] = os.getenv("CAPTCHA_SITE_KEY")
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 33507))
     from jobs import rq
     rq.init_app(app)
 
