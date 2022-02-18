@@ -1,1 +1,1 @@
-web: python wsgi.py db upgrade && gunicorn "wsgi:create_app()" --workers 1 --worker-class gevent
+web: gunicorn "wsgi:create_app()" --workers 1 --worker-class gevent
