@@ -1,1 +1,1 @@
-web: gunicorn xss-app-test2.wsgi
+web: python wsgi.py
