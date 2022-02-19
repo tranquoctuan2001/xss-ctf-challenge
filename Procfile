@@ -1,1 +1,1 @@
-web: python wsgi.py
+web: gunicorn xss-app-test2.wsgi --log-file -
