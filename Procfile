@@ -1,1 +1,1 @@
-web: gunicorn xss-app-test2.wsgi --log-file -
+web: gunicorn 'wsgi:create_app()'
